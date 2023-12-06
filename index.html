@@ -1,0 +1,50 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="UTF-8">
+   <title>zdaj24.pl</title>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+   <style>
+     body {
+       background-color: black;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       margin: 0;
+       margin-left: 20px;
+       font-family: 'Poppins', sans-serif;
+     }
+     .in {
+       font-size: 59.5px;
+       font-weight: 700;
+       color: white;
+       margin-bottom: 13px;
+     }
+     
+   </style>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+   <script>
+     document.addEventListener('DOMContentLoaded', function(){
+       var typed = new Typed('#tekst', {
+         strings: ['Darmowe odpowiedzi do odrabiamy.pl już w poniedziałek!'],
+         typeSpeed: 60,
+         showCursor: true,
+         onComplete: function() {
+           setTimeout(function() {
+             window.location.href = "https://discord.gg/";
+           }, 10000);
+         }
+       });
+     });
+   </script>
+ </head>
+ <body>
+   <div class="in">
+     <span id="tekst"></span>
+   </div>
+ </body>
+ </html>
+ 
